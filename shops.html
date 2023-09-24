@@ -23,6 +23,7 @@
             height: 0;
         }
 
+/* nav bar section */
         nav{
             display: flex;
             justify-content: space-between;
@@ -212,6 +213,19 @@
         #abt a:hover{
             color: grey;
         }
+
+        /* page load effects */
+            /* Define the animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Apply the animation to the element */
+    body {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out 1s forwards;
+    }
 
     </style>
 

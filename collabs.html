@@ -213,6 +213,19 @@
             color: grey;
         }
 
+                /* page load effects */
+            /* Define the animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Apply the animation to the element */
+    body {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out 1s forwards;
+    }
+
     </style>
 
 </head>
