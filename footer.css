@@ -5,7 +5,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 9vw 7.4vw;
+            padding: 7vw 7.4vw 15vw;
             background-image: linear-gradient(rgb(245, 245, 245) ,whitesmoke);
             cursor: pointer;
         }
@@ -19,6 +19,69 @@
             letter-spacing: .2vw;
             color: black;
         }
+
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0vw 7.4vw 6vw;
+            background-image: linear-gradient(rgb(245, 245, 245) ,whitesmoke);
+            cursor: pointer;
+        }
+
+        #form h2{
+            margin: 0;
+            font-size: 2.2vw;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+
+        #form p{
+            font-size: 1.1vw;
+            font-weight: 100;
+            margin: 1.3vw 0vw;
+        }
+
+        #form span{
+            display: flex;
+            flex-direction: row;
+            gap: .5vw;
+            margin: 1vw 0vw;
+        }
+
+        #form input[type=email]{
+            padding: 1.1vw;
+            border: .1vw solid #bdbdbd;
+
+        }
+
+        #form input[type=email]:placeholder-shown {
+            visibility: visible;
+            width: 20vw;
+        }
+
+
+        #form button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: #fafafa;
+            border: .21vw solid black; 
+            padding:.9vw 2vw;
+            font-size: .9vw;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition-duration: .35s;
+        }
+
+        #form button:hover{
+            background-color: black;
+            color: #fafafa;
+        }
+
 
         #abt a{
             text-decoration: none;
