@@ -1,0 +1,50 @@
+/* hoverlist section */
+#hiddenlist{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    /* animation: fade-out 4s 4s ease-out forwards; */
+}
+
+#hoverlist:hover + #hiddenlist, 
+#hiddenlist:hover{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw .5vw;
+    text-transform: uppercase;
+    color: black;
+    background-color: #fff;
+    animation: moveToUp .3s ease-in;
+    opacity: 1;
+    position: absolute;
+    transition-duration: .4s;
+    z-index: 999;
+}
+
+#list #hiddenlist a:hover{
+    color: #d3d3d3;
+}
+
+
+@keyframes moveToUp {
+    0% {
+    transform: translateY(30px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+#side #hiddenlist a{
+    color: black;
+    padding: .3vw 1vw;
+    line-height: 1.5vw; 
+    font-size: .9vw;
+    font-weight: 600;
+}
+
+#hoverlist:hover:after + #hiddenlist{
+    opacity: 0;
+    position: absolute;
+    animation: fade-out 4s 1s ease-out forwards;
