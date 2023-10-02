@@ -41,7 +41,7 @@
     padding: .3vw 1vw;
     line-height: 1.5vw; 
     font-size: .9vw;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #hoverlist:hover:after + #hiddenlist{
