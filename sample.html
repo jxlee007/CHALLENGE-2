@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #image-slider {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.slider {
+  width: 10px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -5px;
+  background-color: black;
+  cursor: pointer;
+}
+
+    </style>
+
+</head>
+<body>
+    <div id="image-slider">
+        <div class="image-container">
+          <img src="CineLutsV1.jpg" alt="Image 1" />
+        </div>
+        <div class="image-container">
+          <img src="CineLutsV2.jpg" alt="Image 2" />
+        </div>
+        <div class="slider"></div>
+      </div>
+
+      <script>
+        const imageSlider = document.querySelector('#image-slider');
+const slider = document.querySelector('.slider');
+const image1 = document.querySelector('.image-container img:first-child');
+const image2 = document.querySelector('.image-container img:last-child');
+
+slider.addEventListener('mousedown', function(e) {
+  e.preventDefault();
+  document.addEventListener('mousemove', handleMouseMove);
+  document.addEventListener('mouseup', handleMouseUp);
+});
+
+function handleMouseMove(e) {
+  const sliderPosition = e.clientX - imageSlider.offsetLeft;
+  slider.style.left = `${sliderPosition}px`;
+
+  const image1Width = sliderPosition;
+  const image2Width = imageSlider.clientWidth - sliderPosition;
+
+  image1.style.width = `${image1Width}px`;
+  image2.style.width = `${image2Width}px`;
+}
+
+function handleMouseUp(e) {
+  document.removeEventListener('mousemove', handleMouseMove);
+}
+
+      </script>
+      
+</body>
+</html>

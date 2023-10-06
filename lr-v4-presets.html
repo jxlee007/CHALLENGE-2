@@ -13,15 +13,17 @@
      
 
     <link rel="stylesheet" href="product-TF1.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="hoverlist.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="accordian.css">
 
 </head>
 
 <body>
     <div id="header">
         <nav>
-            <div id="digisign"><a href="index.html">hello</a></div>
+            <div id="digisign"><a href="index.html"><img src="DS1-black.png" alt="autograph" width="150px"></a></div>
             <div id="side">
                 <div id="list">
                     <a href="shops.html" id="hoverlist" >shop</a>
@@ -80,11 +82,22 @@
                     
                 </div>
 <!-- footer section -->
-                <div>
+                <>
                 <!-- accordian section -->
-                    <div>
+                        <button class="accordion">Section 1</button>
+                        <div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
 
-                    </div>
+                        <button class="accordion">Section 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Section 3</button>
+                        <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
 
                     <p>
                         24 Presets Included (.xmp format).  Zip file is sent shortly after purchase.
@@ -120,6 +133,44 @@
             <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
             </div>
         </footer>
+
+        <script>
+// This JavaScript code is used to create an accordion-style user interface interaction on a web page. An accordion typically consists of a list of items where each item can be expanded or collapsed when clicked. In your code, you are targeting elements with the class name "accordion" and adding event listeners to them to toggle their visibility when clicked.
+
+// Here's a breakdown of the code step by step:
+
+// 1. `var acc = document.getElementsByClassName("accordion");`: This line of code selects all elements with the class name "accordion" and stores them in the variable `acc`. This variable will hold an array-like object containing all matching elements.
+
+// 2. `var i;`: Declares a variable `i` that will be used as a loop counter in the upcoming `for` loop.
+
+// 3. `for (i = 0; i < acc.length; i++) { ... }`: This is a `for` loop that iterates through all the elements in the `acc` array.
+
+//    - `acc[i].addEventListener("click", function() { ... });`: For each element with the "accordion" class, you add a click event listener to it. When any of these elements are clicked, the provided function is executed.
+
+//      - `this.classList.toggle("active");`: Within the click event function, `this` refers to the clicked element. This line toggles the "active" class on the clicked element. This class is typically used to style the active (expanded) accordion item differently from the others.
+
+//      - `var panel = this.nextElementSibling;`: This line selects the next sibling element of the clicked "accordion" element. This is assumed to be the content or panel that you want to show or hide.
+
+//      - The following conditional statements control the display of the `panel`:
+//        - `if (panel.style.display === "block") { ... }`: If the `panel` is currently set to be displayed as "block" (visible), it toggles it to "none" (hidden).
+//        - `else { ... }`: If the `panel` is not currently displayed as "block" (hidden), it toggles it to "block" (visible).
+
+// In summary, this code sets up an event listener on elements with the class "accordion" such that when a user clicks on any of them, it toggles the visibility of the next sibling element, assuming that it is the content or panel associated with that accordion item. Additionally, it adds or removes the "active" class to style the active accordion item. This creates an accordion-like behavior where only one panel is visible at a time, and clicking on an accordion item expands or collapses it.
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "flex";
+                }
+            });
+            }
+        </script>
 
     
 </body>
