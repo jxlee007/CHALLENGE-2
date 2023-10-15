@@ -8,8 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.cdnfonts.com/css/futura-pt?styles=117663,117667,117668,117664,117666,117662,117665" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
      
 
     <link rel="stylesheet" href="product-TF1.css">
@@ -81,27 +80,33 @@
                 <div  class="pair-slider-div">
                     
                 </div>
-<!-- footer section -->
-                <>
+<!-- info section -->
+                <div id="accordion">
                 <!-- accordian section -->
-                        <button class="accordion">Section 1</button>
-                        <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
+                <ul class="list">
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2>Install Instructions</h2>
+                        <p>Extract the ZIP file (to your desktop computer, not to your phone).<br>
+                            Open Lightroom and go to the Presets section. Click on File > Import Profiles & Presets.<br>
+                            Select the presets ZIP file(s) and click Import. → Selecting the ZIP file.<br>
+                            Restart LR and your presets will now be listed in the Presets section.<br>
+                            
+                            When in doubt, also feel free to Google/YouTube it.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2>Mobile FAQ's</h2>
+                        <p>How do I get these to work on LR CC Mobile? You’ll<br> need to install the presets on your DESKTOP version<br> of Lightroom CC FIRST,  then they will auto-sync into your <br> Lightroom CC Mobile App.</p>
+                    </li>
+                </ul>
 
-                        <button class="accordion">Section 2</button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-
-                        <button class="accordion">Section 3</button>
-                        <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-
-                    <p>
-                        24 Presets Included (.xmp format).  Zip file is sent shortly after purchase.
-                        Download the files to your DESKTOP LR, NOT on your phone. LR will sync to your mobile app.
+                    <p id="disclaimer">
+                        24 Presets Included (.xmp format). Zip file is sent shortly after purchase. <br>
+                        Download the files to your DESKTOP LR, NOT on your phone.
+                        LR will sync to <br> your mobile app.<br>
                         Purchased presets are not to be shared or resold in any manner.                        
                     </p>
 
@@ -133,44 +138,6 @@
             <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
             </div>
         </footer>
-
-        <script>
-// This JavaScript code is used to create an accordion-style user interface interaction on a web page. An accordion typically consists of a list of items where each item can be expanded or collapsed when clicked. In your code, you are targeting elements with the class name "accordion" and adding event listeners to them to toggle their visibility when clicked.
-
-// Here's a breakdown of the code step by step:
-
-// 1. `var acc = document.getElementsByClassName("accordion");`: This line of code selects all elements with the class name "accordion" and stores them in the variable `acc`. This variable will hold an array-like object containing all matching elements.
-
-// 2. `var i;`: Declares a variable `i` that will be used as a loop counter in the upcoming `for` loop.
-
-// 3. `for (i = 0; i < acc.length; i++) { ... }`: This is a `for` loop that iterates through all the elements in the `acc` array.
-
-//    - `acc[i].addEventListener("click", function() { ... });`: For each element with the "accordion" class, you add a click event listener to it. When any of these elements are clicked, the provided function is executed.
-
-//      - `this.classList.toggle("active");`: Within the click event function, `this` refers to the clicked element. This line toggles the "active" class on the clicked element. This class is typically used to style the active (expanded) accordion item differently from the others.
-
-//      - `var panel = this.nextElementSibling;`: This line selects the next sibling element of the clicked "accordion" element. This is assumed to be the content or panel that you want to show or hide.
-
-//      - The following conditional statements control the display of the `panel`:
-//        - `if (panel.style.display === "block") { ... }`: If the `panel` is currently set to be displayed as "block" (visible), it toggles it to "none" (hidden).
-//        - `else { ... }`: If the `panel` is not currently displayed as "block" (hidden), it toggles it to "block" (visible).
-
-// In summary, this code sets up an event listener on elements with the class "accordion" such that when a user clicks on any of them, it toggles the visibility of the next sibling element, assuming that it is the content or panel associated with that accordion item. Additionally, it adds or removes the "active" class to style the active accordion item. This creates an accordion-like behavior where only one panel is visible at a time, and clicking on an accordion item expands or collapses it.
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "flex") {
-                panel.style.display = "none";
-                } else {
-                panel.style.display = "flex";
-                }
-            });
-            }
-        </script>
 
     
 </body>

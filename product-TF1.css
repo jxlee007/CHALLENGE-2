@@ -1,52 +1,11 @@
 *{
     box-sizing: border-box;
-    /* font-family: 'Nunito Sans', sans-serif; */
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
 html,body{
     height: 0;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.8vw 7.4vw 0vw;
-
-    background-color: transparent;
-    cursor: auto;
-}
-
-#digisign{
-    padding: 1.5vw 4vw;
-    background-color: red;
-    color: black;
-    cursor: pointer;
-}
-
-#side{
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-    cursor: pointer;
-}
-
-#side a{
-    display: flex;
-    padding: .7vw .5vw;
-    text-decoration: none;
-    color: #bdbdbd;
-    text-transform: uppercase;
-    font-size: .9vw;
-    letter-spacing: .1vw;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-#side a:hover{
-    color: lightgrey;
 }
 
 #main{
@@ -140,4 +99,16 @@ nav{
 #second div.pair-slider-div{
     background-color: blue;
     
+}
+
+/* info section */
+#accordion{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+  }
+
+#accordion #disclaimer{
+    text-align: center;
+    font-weight: 300;
 }
