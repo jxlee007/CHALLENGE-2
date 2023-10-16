@@ -80,17 +80,15 @@ select{
 
 #left{
     display: flex;
-    justify-content: flex-end;
-    width: fit-content;
-    flex-direction: row;
     flex-wrap: wrap;
+    width: 40vw;
 }
 
-#left img{
-    display: flex;
-    align-items: flex-end;
-    width: 80%;
+#left span{
+    width: 38vw;
 }
+
+
 
 /* second section */
 #second{
@@ -109,10 +107,11 @@ select{
     text-transform: uppercase;
 }
 
-#second div.pair-slider-div{
-    background-color: blue;
-    
-}
+/* #second span{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+} */
 
 /* info section */
 #accordion{
@@ -126,18 +125,4 @@ select{
     font-weight: 300;
 }
 
-#luts{
-    display: flex;
-    flex-direction: column;
-    width: 42vw;
-}
-
-#luts ul{
-    padding-left: 7vw;
-}
-
-#luts ul > li {
-    line-height: 2.3vw;
-    font-weight: 300;
-}
 
