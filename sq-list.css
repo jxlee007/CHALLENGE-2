@@ -1,0 +1,24 @@
+.sq-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin: 2vw 0vw;
+}
+
+.sq-list img{
+    width: 15.5vw;
+}
+
+.sq-list-1{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin: 2vw 0vw ;
+}
+
+.sq-list-1 img{
+    width: 26.2vw;
+    overflow: hidden;
+    object-fit: cover;
+    height: 52vh;
+}

@@ -51,6 +51,12 @@ html,body{
     line-height: 1.6;
 }
 
+select{
+    padding: .5vw;
+    padding-right: 15vw;
+    border: .1vw solid #bdbdbd;
+}
+
 #right button{
     margin-top: 1vw;
     padding: .9vw 2.93vw;
@@ -112,3 +118,19 @@ html,body{
     text-align: center;
     font-weight: 300;
 }
+
+#luts{
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+}
+
+#luts ul{
+    padding-left: 7vw;
+}
+
+#luts ul > li {
+    line-height: 2.3vw;
+    font-weight: 300;
+}
+
