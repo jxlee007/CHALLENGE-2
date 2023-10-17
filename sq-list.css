@@ -22,3 +22,15 @@
     object-fit: cover;
     height: 52vh;
 }
+
+.sq-list-2{
+    display: flex;
+    flex-direction: row;
+    gap: .5vw;
+}
+
+.sq-list-2 img{
+    width: 20vw;
+    height: 19.7vw;
+    object-fit: cover;
+}
