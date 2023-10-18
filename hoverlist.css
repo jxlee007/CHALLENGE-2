@@ -1,5 +1,5 @@
 /* hoverlist section */
-#hiddenlist{
+#hiddenlist {
     display: none;
     opacity: 0;
     transition: opacity 0.5s;
@@ -7,8 +7,8 @@
     /* animation: fade-out 4s 4s ease-out forwards; */
 }
 
-#hoverlist:hover + #hiddenlist, 
-#hiddenlist:hover{
+#hoverlist:hover+#hiddenlist,
+#hiddenlist:hover {
     display: flex;
     flex-direction: column;
     padding: 1vw .5vw;
@@ -22,29 +22,30 @@
     z-index: 999;
 }
 
-#list #hiddenlist a:hover{
+#list #hiddenlist a:hover {
     color: #d3d3d3;
 }
 
 
 @keyframes moveToUp {
     0% {
-    transform: translateY(30px);
+        transform: translateY(30px);
     }
+
     100% {
-    transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
-#side #hiddenlist a{
+#side #hiddenlist a {
     color: black;
     padding: .3vw 1vw;
-    line-height: 1.5vw; 
+    line-height: 1.5vw;
     font-size: .9vw;
     font-weight: 400;
 }
 
-#hoverlist:hover:after + #hiddenlist{
+#hoverlist:hover:after+#hiddenlist {
     opacity: 0;
     position: absolute;
     animation: fade-out 4s 1s ease-out forwards;

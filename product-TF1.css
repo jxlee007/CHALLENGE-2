@@ -1,15 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-html,body{
+html,
+body {
     height: auto;
     position: relative;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +18,7 @@ html,body{
     flex-wrap: wrap;
 }
 
-#first{
+#first {
     display: flex;
     flex-direction: row;
     width: 82.5vw;
@@ -26,14 +27,14 @@ html,body{
     gap: 2vw;
 }
 
-#right{
+#right {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 67vw;
 }
 
-#right h1{
+#right h1 {
     font-weight: 400;
     letter-spacing: .4vw;
     font-size: 3.4vw;
@@ -41,30 +42,30 @@ html,body{
     margin: 0vw 0vw 4vw;
 }
 
-#right #head{
+#right #head {
     margin-top: 2vw;
 }
 
-#right span{
+#right span {
     letter-spacing: .1vw;
     font-weight: 300;
     font-size: 1vw;
     line-height: 1.6;
 }
 
-select{
+select {
     padding: .5vw;
     padding-right: 15vw;
     border: .1vw solid #bdbdbd;
 }
 
-#scale{
+#scale {
     padding: .5vw;
     padding-right: 5vw;
     margin-right: 3vw;
 }
 
-#right button{
+#right button {
     margin-top: 1vw;
     padding: .9vw 2.93vw;
     text-transform: uppercase;
@@ -78,7 +79,7 @@ select{
     transition-duration: .35s;
 }
 
-#left{
+#left {
     display: flex;
     justify-content: flex-end;
     width: fit-content;
@@ -86,14 +87,14 @@ select{
     flex-wrap: wrap;
 }
 
-#left img{
+#left img {
     display: flex;
     align-items: flex-end;
     width: 80%;
 }
 
 /* second section */
-#second{
+#second {
     /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
@@ -102,42 +103,41 @@ select{
     align-items: center;
 }
 
-#second h3{
+#second h3 {
     font-size: 1.35vw;
     font-weight: bolder;
     letter-spacing: .1vw;
     text-transform: uppercase;
 }
 
-#second div.pair-slider-div{
+#second div.pair-slider-div {
     background-color: blue;
-    
+
 }
 
 /* info section */
-#accordion{
+#accordion {
     display: flex;
     flex-direction: column;
     width: 45vw;
-  }
+}
 
-#accordion #disclaimer{
+#accordion #disclaimer {
     text-align: center;
     font-weight: 300;
 }
 
-#luts{
+#luts {
     display: flex;
     flex-direction: column;
     width: 42vw;
 }
 
-#luts ul{
+#luts ul {
     padding-left: 7vw;
 }
 
-#luts ul > li {
+#luts ul>li {
     line-height: 2.3vw;
     font-weight: 300;
 }
-

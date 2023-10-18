@@ -1,14 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-html,body{
+html,
+body {
     height: 0;
 }
 
-#main{
+#main {
     display: flex;
     flex-wrap: wrap;
     width: 82.8 vw;
@@ -19,7 +20,7 @@ html,body{
     /* gap: 1vw; */
 }
 
-#products{
+#products {
     display: flex;
     height: auto;
     width: 100%;
@@ -31,22 +32,22 @@ html,body{
     color: black;
 }
 
-#products span{
+#products span {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#products span img{
+#products span img {
     width: 21vw;
 }
 
-#products span p{
+#products span p {
     margin: .1vw;
 }
 
-.bold{
+.bold {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -60,7 +61,7 @@ html,body{
     font-weight: 800;
 }
 
-.thin{
+.thin {
     position: absolute;
     text-transform: uppercase;
     top: 50%;

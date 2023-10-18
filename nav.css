@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,18 +7,18 @@ nav{
     cursor: auto;
 }
 
-#digisign{
+#digisign {
     cursor: pointer;
 }
 
-#side{
+#side {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     cursor: pointer;
 }
 
-#side a{
+#side a {
     display: flex;
     padding: .7vw .5vw;
     text-decoration: none;
@@ -30,6 +30,6 @@ nav{
     cursor: pointer;
 }
 
-#side a:hover{
+#side a:hover {
     color: lightgrey;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.cdnfonts.com/css/futura-pt?styles=117663,117667,117668,117664,117666,117662,117665" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt?styles=117663,117667,117668,117664,117666,117662,117665"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="hoverlist.css">
@@ -17,18 +19,19 @@
 
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
             /* font-family: 'Nunito Sans', sans-serif; */
             font-family: 'Futura PT', sans-serif;
             scroll-behavior: smooth;
         }
 
-        html,body{
+        html,
+        body {
             height: 0;
         }
 
-        #main{
+        #main {
             display: flex;
             justify-content: space-evenly;
             flex-direction: row;
@@ -37,7 +40,7 @@
             gap: 2vw;
         }
 
-        #right{
+        #right {
             /* background-color: blue; */
             display: flex;
             flex-direction: column;
@@ -45,7 +48,7 @@
             width: 40.5vw;
         }
 
-        #right h1{
+        #right h1 {
             display: inline-flex;
             font-size: 4vw;
             font-weight: 100;
@@ -55,7 +58,7 @@
             padding-bottom: 1.2vw;
         }
 
-        #left{
+        #left {
             display: flex;
             /* flex-direction: column;
             flex-wrap: wrap; */
@@ -63,7 +66,7 @@
             flex-flow: column;
         }
 
-        #left h3{
+        #left h3 {
             font-size: 1.2vw;
             font-weight: 400;
             margin: 0;
@@ -71,14 +74,14 @@
             padding-bottom: .3vw;
         }
 
-        #left h5{
+        #left h5 {
             font-weight: 400;
             margin: 0;
             margin-top: -2vw;
             padding-bottom: 1.5vw;
         }
 
-        form{
+        form {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -86,15 +89,15 @@
             align-content: flex-start;
         }
 
-        fieldset{
+        fieldset {
             display: flex;
-            flex-flow: column; 
+            flex-flow: column;
             border: none;
             padding: 1.4vw 0vw;
             width: 40vw;
 
         }
-        
+
 
         input[type=text],
         input[type=email],
@@ -104,12 +107,12 @@
             border: .1vw solid lightgrey;
         }
 
-        input[type=radio]{
+        input[type=radio] {
             transform: scale(1.5);
             accent-color: black;
         }
 
-        .set{
+        .set {
             font-size: .9vw;
             display: flex;
             flex-flow: row;
@@ -118,31 +121,31 @@
             align-items: center;
         }
 
-        .small{
+        .small {
             font-size: .9vw;
         }
 
-        #align{
+        #align {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             gap: .8vw;
         }
 
-        .align{
+        .align {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             text-transform: capitalize;
         }
 
-        button{
+        button {
             display: flex;
             justify-content: center;
             color: black;
             background-color: #fafafa;
-            border: .21vw solid black; 
-            padding:.9vw 2.5vw;
+            border: .21vw solid black;
+            padding: .9vw 2.5vw;
             font-size: 1vw;
             font-weight: 800;
             letter-spacing: .1vw;
@@ -151,24 +154,28 @@
             transition-duration: .35s;
         }
 
-        button:hover{
+        button:hover {
             background-color: black;
             color: #fafafa;
         }
 
-                /* page load effects */
-            /* Define the animation */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
+        /* page load effects */
+        /* Define the animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
 
-    /* Apply the animation to the element */
-    body {
-      opacity: 0;
-      animation: fadeIn 1s ease-in-out 1s forwards;
-    }
+            100% {
+                opacity: 1;
+            }
+        }
 
+        /* Apply the animation to the element */
+        body {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1s forwards;
+        }
     </style>
 
 </head>
@@ -179,7 +186,7 @@
             <div id="digisign"><a href="index.html"><img src="DS1-black.png" alt="autograph" width="150px"></a></div>
             <div id="side">
                 <div id="list">
-                    <a href="shops.html" id="hoverlist" >shop</a>
+                    <a href="shops.html" id="hoverlist">shop</a>
                     <span id="hiddenlist">
                         <a href="shops.html">all</a>
                         <a href="prints.html">prints</a>
@@ -198,62 +205,62 @@
         </nav>
     </div>
 
-    
+
     <div id="main">
 
-            <div id="right">
-                <h1>contact</h1>
-                <img src="contact.jpg">
-            </div>
+        <div id="right">
+            <h1>contact</h1>
+            <img src="contact.jpg">
+        </div>
 
-            <fieldset id="left">
-                <form action="" method="post">
-                    <div>
-                        <fieldset>
-                            <h3>Purpose of email (required)</h3><br>
-                            <h5>select one</h5>
-                            <div class="set"> 
-                                <input type="radio" name="sel" class="radio" id="Business Inquiries" >  &nbsp;
-                                <label for="Business Inquiries">Business Inquiries</label><br>
-                            </div>
-                            <div class="set">
-                                <input type="radio" name="sel" class="radio" id="Customer Service">&nbsp;
-                                <label for="Customer Service">Customer Service</label>
-                            </div>
-                        </fieldset>
-        
-                        <fieldset >
-                            <h3>Name (required)</h3>
-                            <div id="align">
-                                <span class="align">
-                                    <label class="small">First name</label>
-                                    <input type="text" >
-                                </span>
-                                <span class="align">
-                                    <label class="small">last name</label>
-                                    <input type="text">
-                                </span>
-                                
-                            </div>
-
-                        </fieldset>
-                    </div>
-
-    
+        <fieldset id="left">
+            <form action="" method="post">
+                <div>
                     <fieldset>
-                        <h3>Email (required)</h3>
-                        <input type="email"><br>
-    
-                        <h3>Subject / Order # (required)</h3>
-                        <input type="text"><br>
-    
-                        <h3>Message ( All Spam Will Be Ignored ) (required)</h3>
-                        <textarea name="" id="" cols="50" rows="3"></textarea>
+                        <h3>Purpose of email (required)</h3><br>
+                        <h5>select one</h5>
+                        <div class="set">
+                            <input type="radio" name="sel" class="radio" id="Business Inquiries"> &nbsp;
+                            <label for="Business Inquiries">Business Inquiries</label><br>
+                        </div>
+                        <div class="set">
+                            <input type="radio" name="sel" class="radio" id="Customer Service">&nbsp;
+                            <label for="Customer Service">Customer Service</label>
+                        </div>
                     </fieldset>
-                        
-                    <button type="submit">submit</button>
-                </form>
-            </fieldset>
+
+                    <fieldset>
+                        <h3>Name (required)</h3>
+                        <div id="align">
+                            <span class="align">
+                                <label class="small">First name</label>
+                                <input type="text">
+                            </span>
+                            <span class="align">
+                                <label class="small">last name</label>
+                                <input type="text">
+                            </span>
+
+                        </div>
+
+                    </fieldset>
+                </div>
+
+
+                <fieldset>
+                    <h3>Email (required)</h3>
+                    <input type="email"><br>
+
+                    <h3>Subject / Order # (required)</h3>
+                    <input type="text"><br>
+
+                    <h3>Message ( All Spam Will Be Ignored ) (required)</h3>
+                    <textarea name="" id="" cols="50" rows="3"></textarea>
+                </fieldset>
+
+                <button type="submit">submit</button>
+            </form>
+        </fieldset>
     </div>
 
     <footer id="abt">
@@ -271,15 +278,16 @@
             <h1>follow</h1>
         </div>
 
-    <div>
-        <a href="#"><i class="ri-youtube-fill"></i></a>
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-facebook-fill"></i></a>
-        <a href="#"><i class="ri-twitter-fill"></i></a>
-        <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
+        <div>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
         </div>
     </footer>
 
-    
+
 </body>
+
 </html>

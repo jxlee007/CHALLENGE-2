@@ -1,12 +1,18 @@
-.transition, ul li i:before, ul li i:after, p {
+.transition,
+ul li i:before,
+ul li i:after,
+p {
   transition: all 0.25s ease-in-out;
 }
 
-.flipIn, ul li, h1 {
+.flipIn,
+ul li,
+h1 {
   animation: flipdown 0.5s ease both;
 }
 
-.no-select, h2 {
+.no-select,
+h2 {
   font-size: 1.5vw;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -49,38 +55,48 @@
   padding-top: 18px;
   border-top: 1px solid black;
 }
+
 #accordion .list li:nth-of-type(1) {
   animation-delay: 0.5s;
 }
+
 #accordion .list li:nth-of-type(2) {
   animation-delay: 0.75s;
 }
+
 #accordion .list li:nth-of-type(3) {
   animation-delay: 1s;
 }
+
 #accordion .list li:last-of-type {
   padding-bottom: 0;
 }
+
 #accordion .list li i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 16px;
   right: 0;
 }
-#accordion .list li i:before, .list li i:after {
+
+#accordion .list li i:before,
+.list li i:after {
   content: "";
   position: absolute;
   background-color: black;
   width: 3px;
   height: 9px;
 }
+
 #accordion .list li i:before {
   transform: translate(-2px, 0) rotate(45deg);
   /* content: "+"; */
 }
+
 #accordion .list li i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
+
 #accordion .list li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
@@ -89,16 +105,19 @@
   z-index: 1;
   opacity: 0;
 }
-#accordion .list li input[type=checkbox]:checked ~ p {
+
+#accordion .list li input[type=checkbox]:checked~p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
-#accordion .list li input[type=checkbox]:checked ~ i:before {
+
+#accordion .list li input[type=checkbox]:checked~i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-#accordion .list li input[type=checkbox]:checked ~ i:after {
+
+#accordion .list li input[type=checkbox]:checked~i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -108,18 +127,23 @@
     transform-origin: top center;
     transform: rotateX(-90deg);
   }
+
   5% {
     opacity: 1;
   }
+
   80% {
     transform: rotateX(8deg);
   }
+
   83% {
     transform: rotateX(6deg);
   }
+
   92% {
     transform: rotateX(-3deg);
   }
+
   100% {
     transform-origin: top center;
     transform: rotateX(0deg);
@@ -136,4 +160,3 @@
     left: 0;
   }
 }
-
