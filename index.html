@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHALLENGE-2</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Example</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.cdnfonts.com/css/futura-pt?styles=117663,117667,117668,117664,117666,117662,117665" rel="stylesheet">
-                
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hoverlist.css">
     <link rel="stylesheet" href="footer.css">
 
+    <!-- Jarallax CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet" />
     <style>
-         *{
+      /**
+ * These styles are used for DEMO purpose only.
+ */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+*{
             box-sizing: border-box;
-            /* font-family: 'Nunito Sans', sans-serif; */
-            font-family: 'Futura PT', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -142,106 +152,147 @@
             background-color: rgb(216, 216, 0);
         }
 
-
-        .parallax-window {
-            min-height: 400px;
-            background: transparent;
+        .jarallax {
+          height: 90vh;
+          background: transparent;
         }
 
-
-
     </style>
+  </head>
 
-</head>
-
-
-
-<body>
+  <body>
     <div id="main">
-        <nav>
-            <div id="digisign"><a href="index.html"><img src="DS1-white.png" alt="autograph" width="150px">
-            </a></div>
+      <nav>
+          <div id="digisign"><a href="index.html"><img src="DS1-white.png" alt="autograph" width="150px">
+          </a></div>
 
-            <div id="side">
-                <div id="list">
-                    <a href="shops.html" id="hoverlist" >shop</a>
-                    <span id="hiddenlist">
-                        <a href="shops.html">all</a>
-                        <a href="prints.html">prints</a>
-                        <a href="photo-preset.html">lr presets</a>
-                        <a href="luts.html">video luts</a>
-                        <a href="motion-gfx.html">motion gfx</a>
-                        <a href="sound-packs.html">sound fx</a>
-                        <a href="gear.html">gear</a>
-                    </span>
-                </div>
+          <div id="side">
+              <div id="list">
+                  <a href="shops.html" id="hoverlist" >shop</a>
+                  <span id="hiddenlist">
+                      <a href="shops.html">all</a>
+                      <a href="prints.html">prints</a>
+                      <a href="photo-preset.html">lr presets</a>
+                      <a href="luts.html">video luts</a>
+                      <a href="motion-gfx.html">motion gfx</a>
+                      <a href="sound-packs.html">sound fx</a>
+                      <a href="gear.html">gear</a>
+                  </span>
+              </div>
 
-                <a href="collabs.html">collabs</a>
-                <a href="about.html">about</a>
-                <a href="contact.html">contact</a>
-            </div>
-        </nav>
+              <a href="collabs.html">collabs</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+          </div>
+      </nav>
 
-        <div>
-            <div id="full" class="parallax-window" data-parallax="scroll" data-bleed="8" data-image-src="pl-11.jpg"></div>
-            <div class="magic parallax-window" data-parallax="scroll" data-bleed="0" data-image-src="pl-2.jpg">
-                <h1>lightroom presets</h1>
-                <a href="photo-preset.html">shop presets &rarr;</a>
-            </div>
-            <div class="magic parallax-window" data-parallax="scroll" data-bleed="0" data-image-src="pl-3.jpg">
-                <h1>limited edition<br>prints</h1>
-                <a href="prints.html">shop prints &rarr;</a>
-            </div>
-            <div class="magic parallax-window" data-parallax="scroll" data-bleed="0" data-image-src="pl-4.jpg">
-                <h1>motion graphics</h1>
-                <a href="motion-gfx.html">shop motion packs &rarr;</a>
-            </div>
-            <div class="magic parallax-window" data-parallax="scroll" data-bleed="0" data-image-src="pl-5.jpg">
-                <span class="limited">
-                    <strong>jack's pirate life</strong>
-                    <a href="pirates-life.html" target="_blank">limited edition drops</a>
-                </span>
-            </div>
-            <div class="magic parallax-window" data-parallax="scroll" data-bleed="0" data-image-src="pl-last.jpg">
-                <h1>youtube</h1>
-                <a href="photo-preset.html">see more vids&rarr;</a>
-            </div>
+      <div>
+
+      <div id="full" class="magic jarallax">
+        <img class="jarallax-img" src="23498222_2048053252147572_7714668150255517696_n.jpg" alt="" />
+      </div>
+
+      <div class="magic jarallax">
+        <img class="jarallax-img" src="pl-2.jpg" alt="" />
+        <h1>lightroom presets</h1>
+        <a href="photo-preset.html">shop presets &rarr;</a>
+      </div>
+
+      <!-- Background Self-Hosted Video Parallax -->
+      <div class="magic jarallax" data-jarallax data-video-src="mp4:Untitled_Project_V2 (online-video-cutter.com) (1).mp4">
+        <h1>asos</h1>
+        <a href="motion-gfx.html">shop motion packs &rarr;</a>
+      </div>
+
+      <div class="magic jarallax">
+        <img class="jarallax-img" src="219588756_527610421626793_3073836656228722244_n.jpg" alt="" />
+        <h1>city of harmony</h1>
+        <a href="#">shop color filter &rarr;</a>
+      </div>
+
+
+       <!-- Background Self-Hosted Video Parallax -->
+       <div class="magic jarallax" data-jarallax data-video-src="https://vimeo.com/334582790" data-videoLazyLoading="true">
+        <h1>asos</h1>
+        <a href="#">shop motion packs &rarr;</a>
+      </div>
+      
+
+      <div class="magic jarallax">
+        <img class="jarallax-img" src="pl-4.jpg" alt="" />
+        <h1>motion graphics</h1>
+        <a href="#">shop motion packs &rarr;</a>
+      </div>
+
+      <div class="magic jarallax" data-jarallax data-video-src="mp4:pl-v2.mp4">
+        <h1>youtube</h1>
+        <a href="#">see more vids &rarr;</a>
+      </div>
+
+
+      <div class="magic jarallax">
+        <img class="jarallax-img" src="pl-5.jpg" alt="" />
+        <span class="limited">
+          <strong>jack's pirate life</strong>
+          <a href="pirates-life.html" target="_blank">limited edition drops</a>
+        </span>
+      </div>
+
+      
+      </div>
+
+      <!-- about section -->
+            
+      <footer id="abt" class="jarallax">
+
+        <div id="form">
+            <h2>newsletter</h2>
+            <p>Get notified when new projects drop.</p>
+            <span>
+                <input type="email" name="email-NL" id="t1" placeholder="Email Address">
+                <button type="submit">subscribe</button>
+            </span>
         </div>
 
-<!-- about section -->
-            
-                <footer id="abt" class="parallax-window" data-parallax="scroll">
+        <div>
+            <h1>follow</h1>
+        </div>
 
-                    <div id="form">
-                        <h2>newsletter</h2>
-                        <p>Get notified when new projects drop.</p>
-                        <span>
-                            <input type="email" name="email-NL" id="t1" placeholder="Email Address">
-                            <button type="submit">subscribe</button>
-                        </span>
-                    </div>
+    <div>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
+        </div>
+    </footer>
 
-                    <div>
-                        <h1>follow</h1>
-                    </div>
+</div>
+</div>
 
-                <div>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
-                    <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-facebook-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="pirates-life.html"><img src="skull.png" style="width: 1.3vw;"></a>
-                    </div>
-                </footer>
 
-            </div>
-    </div>
-
-    <!-- parallax scroll using scroll -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     
-</body>
 
+
+
+    <!-- Jarallax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
+
+    <!-- Init Jarallax -->
+    <script type="text/javascript">
+      jarallax(document.querySelectorAll(".jarallax"));
+    </script>
+
+    <script>
+      import { jarallax, jarallaxVideo } from 'jarallax';
+jarallaxVideo();
+
+jarallax(document.querySelectorAll('.jarallax'), {
+  speed: 0.2,
+//   videoSrc: 'https://www.youtube.com/watch?v=ab0TSkLe-E0'
+});
+    </script>
+  </body>
 </html>
