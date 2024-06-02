@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: url('pg-1.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 7.4vw 0vw;
+    cursor: auto;
+}
+
+#digisign{
+    cursor: pointer;
+}
+
+#side{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+#side a{
+    display: flex;
+    padding: .7vw .5vw;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9vw;
+    letter-spacing: .1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#side a:hover{
+    color: lightgrey;
+}
+
+/* hoverlist section */
+#hiddenlist{
+    opacity: 0;
+    position: absolute;
+    animation: fade-out 4s 1s ease-out forwards;
+}
+
+#hoverlist:hover + #hiddenlist{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw .5vw;
+    text-transform: uppercase;
+    color: black;
+    background-color: #fff;
+    animation: moveToUp .3s ease-in;
+    opacity: 1;
+    position: absolute;
+}
+
+
+@keyframes moveToUp {
+    0% {
+    transform: translateY(30px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+#side #hiddenlist a{
+    color: black;
+    padding: .3vw 1vw;
+    line-height: 1.5vw; 
+    font-size: .9vw;
+}
+
+#hoverlist:hover:after + #hiddenlist{
+    opacity: 0;
+    position: absolute;
+    animation: fade-out 4s 1s ease-out forwards;
+}
+
+/* parallax section */
+
+.magic{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.magic h1{
+    font-size: 4.2vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-left: 5.5vw;
+}
+
+.magic a{
+    display: flex;
+    padding-left: 5.6vw;
+    font-size: 1.3vw;
+    letter-spacing: .1vw;
+    font-weight: 700;
+    color: yellow;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.limited strong{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 4.2vw;
+    letter-spacing: .2vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.limited{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.limited a{
+    padding: 1.5vw 1vw;
+    width: fit-content;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    transition-duration: .35s;
+}
+
+.limited a:hover{
+    background-color: rgb(216, 216, 0);
+}
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+/* about section */
+#abt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9vw 7.4vw;
+    background-image: linear-gradient(rgb(245, 245, 245) ,whitesmoke);
+    cursor: pointer;
+}
+
+#abt h1{
+    margin: 0;
+    padding-bottom: 1.24vw;
+    text-transform: capitalize;
+    font-size: 4vw;
+    font-weight: 100;
+    letter-spacing: .2vw;
+    color: black;
+}
+
+#abt a{
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: black;
+    padding:.3vw;
+    cursor: pointer;
+}
+
+#abt a:hover{
+    color: grey;
+}
